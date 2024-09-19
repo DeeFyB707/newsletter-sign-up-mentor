@@ -15,7 +15,8 @@ submitBtn.addEventListener('click', function (e) {
     e.preventDefault(emailInput);
 
     if (emailInput.value === '' || !emailRegex.test(emailInput.value)) {
-        alertSpace.innerHTML = 'Please enter your email correctly';
+        alertSpace.innerHTML = 'Valid email required';
+        emailInput.classList.add('emailI');
     }else {
         innerAlertEmail.innerHTML = emailInput.value;
         mainContainer.style.display = 'none';
@@ -27,5 +28,7 @@ submitBtn.addEventListener('click', function (e) {
 alertBtn.addEventListener('click', function () {
     alertContainer.style.display = 'none';
     mainContainer.style.display = 'flex';
+    innerAlertEmail.innerHTML = '';
     emailInput.value = '';
+    emailInput.classList.remove('emailI');
 });
