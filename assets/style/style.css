@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(235, 18%, 26%) !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoB;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+.cardMain {
+    background-color: hsl(0, 0%, 100%) !important;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: robotoB !important;
+    font-weight: 700 !important;
+    font-size: 62px !important;
+    color: hsl(234, 29%, 20%) !important;
+    margin: 0 !important;
+}
+
+p {
+    font-family: roboto !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: hsl(235, 18%, 26%) !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
+}
+
+.lists {
+    margin-top: 28px !important;
+}
+
+.lists li {
+    font-family: roboto;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: hsl(234, 29%, 20%) !important;
+    list-style-image: url(../images/icon-list.svg);
+    padding-left: 23px;
+    margin-top: 15px;
+}
+
+form {
+    margin-top: 26px !important;
+}
+
+form label {
+    font-family: roboto;
+    font-weight: 700 !important;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+
+.alertSpace {
+    font-family: robot;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: red !important;
+}
+
+form input[type="email"] {
+    width: 100%;
+    height: 63px;
+    margin-top: 12px;
+    border: 2px solid hsl(231, 7%, 60%) !important;
+    outline: none !important;
+    border-radius: 11px;
+    padding-left: 20px;
+    font-family: roboto;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: hsl(234, 29%, 20%) !important;
+}
+
+form input[type="email"]::placeholder {
+    font-family: roboto;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: hsl(231, 7%, 60%) !important;
+}
+
+form input[type="email"]:focus {
+    border: 2px solid hsl(234, 29%, 20%) !important;
+}
+
+button {
+    height: 63px;
+    border: none;
+    border-radius: 11px !important;
+    background-color: hsl(234, 29%, 20%);
+    font-family: roboto;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    color: #fff;
+    transition: all .3s !important;
+}
+
+button:hover {
+    background: rgb(235,96,124);
+    background: linear-gradient(90deg, rgba(235,96,124,1) 0%, rgba(236,114,74,1) 100%);
+    -webkit-box-shadow: 0px 14px 20px 0px rgba(235, 160, 160, 1);
+    -moz-box-shadow: 0px 14px 20px 0px rgba(235, 160, 160, 1);
+    box-shadow: 0px 14px 20px 0px rgba(235, 160, 160, 1);
+}
+
+.leftSide {
+    border-radius: 0 !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.backgrContainer {
+    background-color: rgba(0, 0, 0, 0.36) !important;
+}
+
+.alertBox {
+    background-color: #fff !important;
+    width: 32% !important;
+    border-radius: 24px !important;
+}
+
+.alertHead {
+    font-size: 52px !important;
+    font-family: robotoB !important;
+    font-weight: 700 !important;
+    margin-top: 18px !important;
+    color: hsl(234, 29%, 20%) !important;
+}
+
+.alert-p {
+    font-family: roboto;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    color: hsl(234, 29%, 20%) !important;
+    margin: 0 !important;
+    margin-top: 22px !important;
+}
+
+.alertBtn {
+    height: 63px;
+    width: 100% !important;
+    border: none;
+    border-radius: 11px !important;
+    background-color: hsl(234, 29%, 20%);
+    font-family: roboto;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    color: #fff;
+    margin-top: 25px !important;
+    transition: all .3s !important;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 31px !important;
+    }
+    .alertBox {
+        width: 100% !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+        position: relative;
+    }
+    .successIconMobile {
+        margin-top: 20% !important;
+    }
+    .alertHead {
+        font-size: 29px !important;
+        margin-top: 28px !important;
+    }
+    .alertBtn {
+        width: 92.5% !important;
+        position: absolute;
+        bottom: 28px !important;
+        left: 15px;
+    }
+}
